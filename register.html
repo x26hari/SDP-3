@@ -57,12 +57,13 @@
 
     .form-signin {
         width: 100%;
-        max-width: 350px;
+        max-width: 500px;
+        align-items: center;
+        position: absolute;
         padding: 0px;
         margin: auto;
-        position: absolute;
         top: 20%;
-        right: 15%;
+        right: 10%;
     }
 </style>
 
@@ -120,41 +121,109 @@
         </div>
         </div>
     </nav>
-    <form class="form-signin">
-        <p style="font-family: 'Roboto', sans-serif; font-size: 20px; color :#cccccc; font-weight: 100;">Welcome back
+
+    <div class="form-signin">
+        <p style="font-family: 'Roboto', sans-serif; font-size: 20px; color :#cccccc; font-weight:100;">Welcome
         </p>
+
         <h1
             style="font-family: 'Roboto', sans-serif; font-weight: bold;  font-size: 30px; color : #ffffff; text-align: start;">
-            Login to your Account
+            Create an Account
         </h1>
-        <br>
-        <p style="font-family: 'Roboto', sans-serif; color :#cccccc;">Email</p>
-        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus="">
-        &nbsp;
-        <p style="font-family: 'Roboto', sans-serif; color :#cccccc;">Password</p>
-        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="">
-        <br>
-        <div class="checkbox mb-3">
-            <label style="color :#cccccc;">
-                <input type="checkbox" value="remember-me"> Remember me
-            </label>
-        </div>
-        <center>
-            <a href="index.html" class="btn btn-lg btn-primary"
-                style="width:300px; font-weight: bold; background-color:#FF7315;border-color: transparent;">Login</a>
+        <form>
 
-            <br><br>
-            <p style="color :#cccccc;">or</p>
+            <div class="row">
+                <div class="col-md-7">
+                    <label for="Firstname" style="font-family: 'Roboto', sans-serif; color :#cccccc;">First
+                        Name</label>
+                    <input type="name" class="form-control" id="name" placeholder="">
+                </div>
+                <div class="col-md-5">
+                    <label for="Lastname" style="font-family: 'Roboto', sans-serif; color :#cccccc;">Last Name</label>
+                    <input type="name" class="form-control" id="name" placeholder="">
+                </div>
+            </div>
 
-            <a href="index.html" class="btn btn-lg btn-primary"
-                style="width:300px; background-color:#2D3748; border-color: transparent;"><img src="images/google.svg">
-                Sign in with Google</a>
-        </center>
-        <br>
-        <p style=" position: absolute; left: 20%;  color :#cccccc;">Don't have an account ? <a
-                style="text-decoration: none; color: #FF7315;" href="register.html">Register</a>
-        </p>
-    </form>
+            <div class="row">
+                <div class="col-md-12">
+                    <label for="inputEmail4" style="font-family: 'Roboto', sans-serif; color :#cccccc;">Email</label>
+                    <input type="email" class="form-control" id="inputEmail4" placeholder="xyz@gmail.com">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <label for="inputPassword4"
+                        style="font-family: 'Roboto', sans-serif; color :#cccccc;">Password</label>
+                    <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <label for="inputPassword4" style="font-family: 'Roboto', sans-serif; color :#cccccc;">Mobile
+                        no.</label>
+                    <input type="mobile no." class="form-control" id="inputPassword4" placeholder="123456789">
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="col-md-12">
+                    <label for="inputEmail4" style="font-family: 'Roboto', sans-serif; color :#cccccc;">Address
+                        1</label>
+                    <input type="Address1" class="form-control" id="inputEmail4" placeholder="Flat no , Apartment name">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="inputPassword4" style="font-family: 'Roboto', sans-serif; color :#cccccc;">Address
+                        2</label>
+                    <input type="Address2" class="form-control" id="inputPassword4" placeholder="Street name">
+                </div>
+                <div class=" col-md-6">
+                    <label for="inputCity" style="font-family: 'Roboto', sans-serif; color :#cccccc;">City</label>
+                    <input type="text" class="form-control" id="inputCity" placeholder="Hyderabad,Vijayawada etc">
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col-md-6">
+                    <label for="inputState" style="font-family: 'Roboto', sans-serif; color :#cccccc;">State</label>
+                    <select id="inputState" class="form-control">
+                        <option selected>Choose...</option>
+                        <option>Andhra Pradesh</option>
+                        <option>Telangana</option>
+                        <option>Puducherry</option>
+                        <option>Tamil Nadu</option>
+                        <option>Kerala</option>
+                        <option>Karnataka</option>
+
+                    </select>
+                </div>
+                <div class="col-md-6">
+                    <label for="inputZip" style="font-family: 'Roboto', sans-serif; color :#cccccc;">Zip</label>
+                    <input type="text" class="form-control" id="inputZip" placeholder="123456">
+                </div>
+            </div>
+            <br>
+            <center>
+                <a href="index.html" class="btn btn-lg btn-primary"
+                    style="width:300px;  font-weight: bold; background-color:#FF7315;border-color: transparent;">Register</a>
+
+                <br><br>
+                <p style="color :#cccccc;">or</p>
+
+                <a href="index.html" class="btn btn-lg btn-primary"
+                    style="width:300px;  background-color:#2D3748; border-color: transparent;"><img
+                        src="images/google.svg">
+                    Register with Google</a>
+            </center>
+            <br>
+            <p style=" position: absolute; left: 30%;  color :#cccccc;">Already a Member ? <a
+                    style="text-decoration: none; color: #FF7315;" href="login.html">Login</a>
+            </p>
+        </form>
+    </div>
+
 
 </body>
 <script>
